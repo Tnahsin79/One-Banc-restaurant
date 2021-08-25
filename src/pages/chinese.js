@@ -4,15 +4,21 @@ import { Link } from "react-router-dom";
 
 const Chinese = () => {
     return (
-        <div className="container">
+        <div className="container App">
             <div className="row">
-                <div class="col col-9"><h1>CHINESE CUISINE</h1></div>
-                <div class="col col-3">
+                <div class="col col-2">
+                    <Link className="nav-link" to={"/"}>
+                        <button class="btn btn-primary">Home</button>
+                    </Link>
+                </div>
+                <div class="col col-8"><h1 className="name">CHINESE CUISINE</h1></div>
+                <div class="col col-2">
                     <Link className="nav-link" to={"/cart"}>
                         <button class="btn btn-primary">My Cart</button>
                     </Link>
                 </div>
             </div>
+            <hr></hr>
             <div className="row">
                 <div className="col col-4">
                     <Dishes name="Veg Manchurian" price="80" link="https://www.vegrecipesofindia.com/wp-content/uploads/2012/05/veg-manchurian-gravy-recipe-1b-500x500.jpg" />
